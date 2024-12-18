@@ -1,13 +1,16 @@
 {
 	"name": "@xpenb/template",
-	"module": "index.ts",
-	"type": "module",
+	"workspaces": [
+		"functions/*"
+	],
 	"scripts": {
 		"lint": "bunx --bun oxlint --import-plugin --fix",
 		"format": "bunx --bun prettier **/*.ts --write"
 	},
+	"dependencies": {
+		"grammy": "^1.33.0"
+	},
 	"devDependencies": {
-		"@types/bun": "^1.1.12",
 		"oxlint": "^0.10.2",
 		"prettier": "^3.3.3"
 	},

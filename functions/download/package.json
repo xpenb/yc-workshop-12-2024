@@ -1,0 +1,18 @@
+{
+	"main": "./index.js",
+	"scripts": {
+		"build": "esbuild index.ts --bundle --platform=node --target=node18 > index.js",
+		"deploy": "make deploy"
+	},
+	"dependencies": {
+		"@aws-sdk/client-s3": "^3.712.0",
+		"@aws-sdk/client-sqs": "^3.712.0",
+		"@aws-sdk/lib-storage": "^3.712.0",
+		"@types/node": "^22.10.2",
+		"grammy": "^1.33.0",
+		"winston": "^3.17.0"
+	},
+	"devDependencies": {
+		"esbuild": "^0.24.0"
+	}
+}
